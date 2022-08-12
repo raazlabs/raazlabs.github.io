@@ -767,7 +767,7 @@ Google map
 }
 #btn-show-content {
   padding: 20px;
-  background: #fff;
+  background:black;
   cursor: pointer;
   display: inline-block;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
@@ -821,7 +821,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-comments {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-comments, .fa-cutlery {
         font-size: 14px;
         position: absolute;
         top: 50%;
