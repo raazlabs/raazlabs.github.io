@@ -204,6 +204,132 @@ You must be thinking I am the cutest, spend some time with me and you would turn
 
 </section>
 
+<section class="rsvp text-center" id="rsvp">
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Thank you!</h3>
+                        <p>We are glad to see you join us on our big day.</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>Confirm your presence</h3>
+                <p>We would greatly appreciate if you could RSVP ASAP for food arrangements</p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Your name"
+                                                                 required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="adult_count" class="" min="0"
+                                                                  max="4"
+                                                                  placeholder="No. of Adult meal"
+                                                                  required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="kid_count" class="" min="0"
+                                                                  max="4"
+                                                                  placeholder="No. of Kid meal"
+                                                                  >
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-comments"></i><input type="string" name="message" id="message"
+                                                                class="" 
+                                                                placeholder="Message"
+                                                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Yes,
+                        that's me!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+    data-property="{videoURL:'https://www.youtube.com/watch?v=r3btlOJhJmc',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+</div>
+    <div id="video-content">
+        <h5>Church of Scientology & Community Centre of Dublin</h5>
+        <!--<p>City of joy</p>-->
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>How do I get there?</h3>
+        <p>It's way easier than you think!</p>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center" style="color: white;">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle" style="color: white;"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Church of Scientology & Community Centre of Dublin</h5>
+                            <p>Firhouse Rd, Tallaght, Dublin 24, D24 CX39</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Suresh and Himaja</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://+353831784917">+353 831784917</a><br>
+                                <i class="fa fa-mobile"></i> <a href="tel://+353896158596">+353 896158596</a></p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://m.uber.com/looking?drop%5B0%5D=%7B%22latitude%22%3A53.2812557%2C%22longitude%22%3A-6.3445244%2C%22addressLine1%22%3A%22Church%20of%20Scientology%20%20Community%20Centre%20of%20Dublin%22%2C%22addressLine2%22%3A%22Firhouse%20Rd%2C%20Tymon%20South%2C%20Dublin%2024%22%2C%22id%22%3A%22ChIJl7QjAjwLZ0gRtRxJTx4pW44%22%2C%22provider%22%3A%22google_places%22%7D&utm_campaign=open_app_rides&utm_medium=paid%20advertising&utm_source=Uber-Internal"><i
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--<section id="instagram" class="section-padding">
     <div class="container">
         <div class="row">
@@ -327,133 +453,9 @@ You must be thinking I am the cutest, spend some time with me and you would turn
     </div>-->
 </section>
 
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-    data-property="{videoURL:'https://www.youtube.com/watch?v=r3btlOJhJmc',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
-</div>
-    <div id="video-content">
-        <h5>Church of Scientology & Community Centre of Dublin</h5>
-        <!--<p>City of joy</p>-->
-    </div>
-</section>
 
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center" style="color: white;">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle" style="color: white;"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Church of Scientology & Community Centre of Dublin</h5>
-                            <p>Firhouse Rd, Tallaght, Dublin 24, D24 CX39</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Suresh and Himaja</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+353831784917">+353 831784917</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+353896158596">+353 896158596</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/looking?drop%5B0%5D=%7B%22latitude%22%3A53.2812557%2C%22longitude%22%3A-6.3445244%2C%22addressLine1%22%3A%22Church%20of%20Scientology%20%20Community%20Centre%20of%20Dublin%22%2C%22addressLine2%22%3A%22Firhouse%20Rd%2C%20Tymon%20South%2C%20Dublin%2024%22%2C%22id%22%3A%22ChIJl7QjAjwLZ0gRtRxJTx4pW44%22%2C%22provider%22%3A%22google_places%22%7D&utm_campaign=open_app_rides&utm_medium=paid%20advertising&utm_source=Uber-Internal"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="rsvp text-center" id="rsvp">
 
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>Confirm your presence</h3>
-                <p>We would greatly appreciate if you could RSVP ASAP for food arrangements</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="adult_count" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="No. of Adult meal"
-                                                                  required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                       
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="kid_count" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="No. of Kid meal"
-                                                                  >
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-comments"></i><input type="string" name="message" id="message"
-                                                                class="" 
-                                                                placeholder="Message"
-                                                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 
 <footer>
     <div class="container">
