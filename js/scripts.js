@@ -184,23 +184,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Aarya's 1st birthday",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Aug 27, 2022 12:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Aug 27, 2022 16:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Church of Scientology & Community Centre of Dublin, Firhouse Rd, Tymon South, Dublin 24, D24 CX39, Ireland',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Suresh & Himaja at +353 831784917."
         }
     });
 
@@ -215,7 +215,7 @@ $(document).ready(function () {
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
        
-            $.post('https://script.google.com/macros/s/AKfycbxl8_TMlu2Uew6caNueq_cZhF08J3FWO96iTvRbvE8HLUscwOqy3ZfkPwFZC1UG0nwp/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbx_jIVNPd3PccKqkM5qqFd3IvtalaI8h5-XnvNKayFLHmJpIc5ROpwHmNjsgnmZ90ZZ/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
